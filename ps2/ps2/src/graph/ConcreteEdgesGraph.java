@@ -29,7 +29,9 @@ public class ConcreteEdgesGraph<L> implements Graph<L> {
     //   each vertex has a distinct label
     //   each vertex involved in an edge is contained in the vertices set
     // Safety from rep exposure:
-    //   TODO
+    //   by using checkrep for each concreteEdgesGraph
+    //  we are ensuring that our rep invariant is not exposed
+    // and we ourselves also couldn't exploit it 
     
     // TODO constructor
     public ConcreteEdgesGraph() {
