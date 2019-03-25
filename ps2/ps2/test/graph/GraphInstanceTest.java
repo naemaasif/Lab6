@@ -93,9 +93,12 @@ public abstract class GraphInstanceTest {
     @Test
     public void testRemoveVerticesExistent() {
         Graph<String> g = emptyInstance();
+        g.add("roger");
+    	g.add("sam");
     	g.set("roger", "sam", 40);
         assertTrue(g.remove("sam"));
     }
+    
     
     @Test
     public void testRemoveVerticesWithoutEdge() {
