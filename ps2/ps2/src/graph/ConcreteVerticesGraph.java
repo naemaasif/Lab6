@@ -33,9 +33,12 @@ public class ConcreteVerticesGraph<L> implements Graph<L> {
     //   in any public methods.
     
     // TODO constructor
+    public ConcreteVerticesGraph() {
+        checkRep();
+    }
     
     // TODO checkRep
-    public void checkRep() {
+    private void checkRep() {
         assert vertices != null;
         Set<L> vertexLabelSet = new HashSet<>();
         
